@@ -1,0 +1,6 @@
+.form-inline.clearfix
+	.nested-fields
+		.form-inline
+			.form-group
+				= f.input :name, label: false,placeholder: 'name', input_html: { class: "form-control"}
+			= link_to_remove_association "remove" , f, class: "btn btn-default"
